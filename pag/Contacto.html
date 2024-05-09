@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+    <h1>CONTACTO</h1>
+   </header>
+    <nav>
+        <ul>
+          <li><a href="..\index.html">INICIO</a></li>
+          <li><a href="Resumen.html">RESUMEN</a></li>
+          <li><a href="Perfil.html">PERFIL</a></li>
+          <li><a href="Educacion.html">EDUCACION</a></li>
+          <li><a href="Contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="formu">
+          <h2>
+            FORMULARIO DE CONTACTO
+          </h2>
+          <h4>Este es un formulario para que puedan contactar conmigo, respondere lo antes posible mediante su correo electronico</h4>
+        </div>
+        <form action="" name="formulario" method="get"class="form">
+          
+          <div class="form1 mid">
+          
+            <div class="organized1">
+          <label for="nombre">Nombres</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre personal" required>
+        </div>
+
+      <div class="organized1">
+          <label for="apellido">Apellidos</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido personal"required>
+          </div>
+
+        </div>
+
+         <div class="form1 mid1">
+        <div class="organized2">
+          <label for="tel">Telefono</label>
+          <input type="tel" name="tel" id="tel" placeholder="Numero de telefono"required>
+        </div>
+
+          <div class="organized2">
+          <label for="email">Correo</label>
+          <input type="email" name="email" id="email" placeholder="Correo electronico"required>
+        </div>
+
+          <div class="organized2">
+          <label for="direccion">Direccion</label>
+          <input type="text" name="direccion" id="direccion" placeholder="Direccion Empresa"required>
+        </div>
+      </div>
+        
+          <select name="opciones" id="option" class="opciones">
+            <option value="0">Pais</option>
+            <option value="1">Colombia</option>
+            <option value="2">Estados unidos</option>
+            <option value="3">Canada</option>
+            <option value="4">Reino Unido</option>
+          </select>
+         
+         <label for="check"><input type="checkbox" id="check" required> Aceptar terminos y condiciones</label>
+        <div class="boton">
+        <button type="submit">Enviar</button>
+        <button type="reset">Reestablecer</button>
+        <button onclick="inicio(); return false;" class="inicio">Inicio</button>
+      </div>
+        </form>
+      </main>
+
+      <script>
+        function inicio(){
+          window.location.href='..\\index.html';
+        }
+      </script>
+      <footer>&copy2024 todos los derechos reservados</footer>
+</body>
+</html>
